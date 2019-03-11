@@ -63,6 +63,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Commands\ISecurityCommand.cs" />
+    <Compile Include="Commands\MyCustomCommand.cs" />
+    <Compile Include="Commands\SecurityCommand.cs" />
+    <Compile Include="Identity\CustomIdentity.cs" />
+    <Compile Include="Identity\CustomPrincipal.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

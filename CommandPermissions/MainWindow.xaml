@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Button" HorizontalAlignment="Left" Margin="92,181,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Command1}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="198,181,0,0" TextWrapping="Wrap" Text="{Binding Text1, Mode=TwoWay}" VerticalAlignment="Top" Width="404"/>
+        <Button Content="Button2" HorizontalAlignment="Left" Margin="92,223,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Command2}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="198,223,0,0" TextWrapping="Wrap" Text="{Binding Text2, Mode=TwoWay}" VerticalAlignment="Top" Width="404"/>
+
     </Grid>
 </Window>

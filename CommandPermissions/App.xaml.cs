@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading;
 using System.Windows;
+using CommandPermissions.Identity;
 
 namespace CommandPermissions
 {
@@ -13,5 +10,11 @@ namespace CommandPermissions
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            CustomPrincipal customPrincipal = new CustomPrincipal();
+            customPrincipal.Identity = new CustomIdentity("", new []{""}, new List<int> {1,2,3});
+            Thread.CurrentPrincipal = customPrincipal;
+        }
     }
 }
